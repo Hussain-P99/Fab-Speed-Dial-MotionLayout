@@ -16,10 +16,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.fab1.setOnClickListener {
             binding.imageView.setImageResource(R.drawable.puppies)
+            binding.motionLayout.transitionToStart()
         }
 
         binding.fab2.setOnClickListener {
             binding.imageView.setImageResource(R.drawable.dog1)
+            binding.motionLayout.transitionToStart()
         }
     }
 }
