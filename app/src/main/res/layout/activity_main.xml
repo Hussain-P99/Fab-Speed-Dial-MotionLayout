@@ -3,9 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motionLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:layoutDescription="@xml/activity_main_xml_motionlayout_scene"
         tools:context=".MainActivity">
 
         <ImageView
@@ -23,21 +25,19 @@
             android:id="@+id/fab2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/fab1"
-            app:layout_constraintEnd_toEndOf="@+id/fab1">
+            tools:layout_editor_absoluteX="278dp"
+            tools:layout_editor_absoluteY="523dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pitbull"
-                android:gravity="center"
-                android:layout_marginEnd="4dp"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-                android:padding="4dp"
                 android:layout_gravity="center"
-                />
+                android:layout_marginEnd="4dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Pitbull"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -54,18 +54,17 @@
             android:id="@+id/fab1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/fabMain"
-            app:layout_constraintEnd_toEndOf="@+id/fabMain">
+            tools:layout_editor_absoluteX="265dp"
+            tools:layout_editor_absoluteY="587dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginEnd="4dp"
                 android:padding="4dp"
                 android:text="Puppies"
-                android:layout_marginEnd="4dp"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -83,12 +82,10 @@
             android:id="@+id/fabMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="24dp"
-            android:layout_marginBottom="24dp"
             android:src="@drawable/ic_add"
             app:backgroundTint="@android:color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:tint="@color/white" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:tint="@color/white"
+            tools:layout_editor_absoluteX="331dp"
+            tools:layout_editor_absoluteY="651dp" />
+    </androidx.constraintlayout.motion.widget.MotionLayout>
 </layout>

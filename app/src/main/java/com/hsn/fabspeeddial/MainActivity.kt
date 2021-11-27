@@ -14,5 +14,12 @@ class MainActivity : AppCompatActivity() {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+        binding.fab1.setOnClickListener {
+            binding.imageView.setImageResource(R.drawable.puppies)
+        }
+
+        binding.fab2.setOnClickListener {
+            binding.imageView.setImageResource(R.drawable.dog1)
+        }
     }
 }
